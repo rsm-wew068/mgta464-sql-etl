@@ -6,16 +6,18 @@ A comprehensive data engineering and analytics project for the Master's in Busin
 
 ```
 mgta464-sql-etl/
-├── Assignment 2.pgsql          # DISTINCT, Date Functions, Window Functions
-├── Assignment 3.pgsql          # Recursive CTEs, Subqueries, Advanced GROUP BY
-├── Assignment 4.pgsql          # Window Functions, String Processing, Fuzzy Matching
-├── snowflake_yellow12.ipynb    # Complete ETL Pipeline in Snowflake
-├── supplier_case.csv           # Supplier master data
-├── supplier_case.pgsql         # Supplier database schema
-├── Supplier Transactions XML.xml # XML supplier transaction data
-└── Data/
-    ├── Monthly PO Data/        # 41 monthly purchase order CSV files (2019-2022)
-    └── 2021_Gaz_zcta_national.txt # Geographic/ZIP code data
+├── README.md                    # Project documentation
+├── Assignment 2.pgsql           # SQL fundamentals
+├── Assignment 3.pgsql           # Advanced SQL concepts
+├── Assignment 4.pgsql           # Data engineering
+├── snowflake_yellow12.ipynb     # ETL pipeline
+├── ERD.pdf                      # Database schema diagram
+└── Data/                        # All data files organized here
+    ├── supplier_case.csv            # Core supplier data
+    ├── supplier_case.pgsql          # Supplier database schema
+    ├── Supplier Transactions XML.xml # Updated transaction data (2022)
+    ├── 2021_Gaz_zcta_national.txt   # Geographic data
+    └── Monthly PO Data/             # 41 monthly CSV files
 ```
 
 ## 🎯 Learning Objectives
@@ -48,17 +50,19 @@ mgta464-sql-etl/
 - Geographic and weather data correlation
 - Business intelligence implementation
 
-## 🗂️ Data Sources
+## 📂 Data Sources
 
-### **Core Business Data**
-- **Supplier Information**: 13 suppliers with contact details, addresses, banking info
-- **Purchase Orders**: 41 monthly files spanning 2019-2022 with line items, quantities, prices
-- **Supplier Transactions**: XML format transaction data with invoices and payments
-- **Geographic Data**: ZIP code tabulation areas with coordinates
+### Assignment Data
+These files are used in Assignment 2, 3, and 4 for SQL practice and database exercises:
+- `Data/supplier_case.csv` — Core supplier master data for SQL queries and exercises
+- `Data/supplier_case.pgsql` — SQL schema for loading supplier data into a database
 
-### **External Data Integration**
-- **Weather Data**: NOAA weather station integration for supplier location analysis
-- **PostgreSQL Database**: Cross-platform data extraction and transformation
+### Snowflake ETL Project Data
+These files are used in the `snowflake_yellow12.ipynb` notebook for the end-to-end ETL pipeline:
+- `Data/Monthly PO Data/` — 41 monthly purchase order CSV files, combined and transformed in the ETL process
+- `Data/Supplier Transactions XML.xml` — Supplier transaction data in XML format, used for advanced ETL and integration
+- `Data/2021_Gaz_zcta_national.txt` — Geographic/ZIP code data for enrichment and analysis
+
 
 ## 🛠️ Technical Skills Demonstrated
 
@@ -132,13 +136,8 @@ Students completing this project will be proficient in:
 
 ## 📊 Entity-Relationship Diagram (ERD)
 
-The [ERD.pdf](./ERD.pdf) file provides a comprehensive visual overview of the data pipeline and database schema used in the assignments.
-
-- **Order to Cash (OTC)** and **Procure to Pay (PTP)** processes are both illustrated.
-- Use this diagram to understand table relationships, keys, and data flow.
-
-> **Tip:** Open the PDF for a detailed, zoomable view of the schema.
+The [ERD.pdf](./ERD.pdf) file provides a high-level view of the database schema and pipeline logic for the assignments (Assignment 2, 3, and 4). It includes both Procure-to-Pay (PTP) and Order-to-Cash (OTC) workflows used in the SQL exercises.
 
 ---
 
-*This project represents a comprehensive data engineering and analytics curriculum, preparing students for real-world business intelligence and data science roles.*
+*This project bridges academic training and practical skills for roles in data engineering, analytics, and business intelligence.*
