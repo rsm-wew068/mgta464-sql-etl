@@ -130,6 +130,15 @@ Students completing this project will be proficient in:
 - Python with required packages (snowflake-connector, psycopg2)
 - Jupyter notebook environment
 
+## 📊 Entity-Relationship Diagram (ERD)
+
+The [ERD.pdf](./ERD.pdf) file provides a comprehensive visual overview of the data pipeline and database schema used in the assignments.
+
+- **Order to Cash (OTC)** and **Procure to Pay (PTP)** processes are both illustrated.
+- Use this diagram to understand table relationships, keys, and data flow.
+
+> **Tip:** Open the PDF for a detailed, zoomable view of the schema.
+
 ---
 
 *This project represents a comprehensive data engineering and analytics curriculum, preparing students for real-world business intelligence and data science roles.*
