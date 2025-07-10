@@ -43,7 +43,7 @@ mgta464-sql-etl/
 - Data quality validation and cleaning
 - Geographic data integration
 
-### **ETL Pipeline (Jupyter Notebook)**
+### **ETL Pipeline (Snowflake)**
 - Multi-source data integration (CSV, XML, Database)
 - Cloud data warehouse operations (Snowflake)
 - Data transformation and type conversion
