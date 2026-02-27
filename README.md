@@ -70,7 +70,7 @@ These files are used in Assignment 2, 3, and 4 for SQL practice and database exe
 - `Data/supplier_case.csv` — Core supplier master data for SQL queries and exercises
 - `Data/supplier_case.pgsql` — SQL schema for loading supplier data into a database
 
-### onetization Cases
+### Monetization Cases
 These files are used for ad-tech scenarios:
 - `monetization/advertisement.pgsql` — Campaign-level performance report over the last 30 days
 - `monetization/retention.pgsql` — Next-day retention query for a fixed date
