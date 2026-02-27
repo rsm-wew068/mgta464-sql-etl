@@ -12,6 +12,12 @@ mgta464-sql-etl/
 ├── Assignment 4.pgsql           # Data engineering
 ├── snowflake_yellow12.ipynb     # ETL pipeline
 ├── ERD.pdf                      # Database schema diagram
+├── monetization/                # Monetization SQL interview practice
+│   ├── advertisement.pgsql      # 30-day campaign performance reporting
+│   ├── retention.pgsql          # Next-day retention calculation
+│   ├── retention_2.pgsql        # Cohort retention variant
+│   ├── ranking.pgsql            # Top-N ranking by category/creator
+│   └── review.pgsql             # Consolidated interview patterns
 └── Data/                        # All data files organized here
     ├── supplier_case.csv            # Core supplier data
     ├── supplier_case.pgsql          # Supplier database schema
@@ -50,12 +56,27 @@ mgta464-sql-etl/
 - Geographic and weather data correlation
 - Business intelligence implementation
 
+### **Monetization Cases**
+- Campaign performance reporting (ROAS and conversion rate)
+- Retention analysis (next-day and cohort-style definitions)
+- Ranking patterns with window functions
+- Defensive SQL patterns (`NULLIF`, `COALESCE`, `CASE WHEN`)
+- End-to-end prompt decomposition with CTE workflows
+
 ## 📂 Data Sources
 
 ### Assignment Data
 These files are used in Assignment 2, 3, and 4 for SQL practice and database exercises:
 - `Data/supplier_case.csv` — Core supplier master data for SQL queries and exercises
 - `Data/supplier_case.pgsql` — SQL schema for loading supplier data into a database
+
+### onetization Cases
+These files are used for ad-tech scenarios:
+- `monetization/advertisement.pgsql` — Campaign-level performance report over the last 30 days
+- `monetization/retention.pgsql` — Next-day retention query for a fixed date
+- `monetization/retention_2.pgsql` — Signup-cohort retention within a 30-day window
+- `monetization/ranking.pgsql` — Top-k ranking with `ROW_NUMBER()` by category/creator
+- `monetization/review.pgsql` — Combined guidance + final top-5 category retention solution
 
 ### Snowflake ETL Project Data
 These files are used in the `snowflake_yellow12.ipynb` notebook for the end-to-end ETL pipeline:
@@ -87,6 +108,12 @@ These files are used in the `snowflake_yellow12.ipynb` notebook for the end-to-e
 - Geographic and temporal data correlation
 - Data quality and fuzzy matching
 
+### **Monetization Analytics**
+- Campaign ROAS and conversion-rate reporting
+- User retention logic across activity dates
+- Category-level ranking and top-k extraction
+- SQL-safe metric calculation under sparse/noisy data
+
 ## 🚀 Key Features
 
 ### **Real-World Scenarios**
@@ -95,6 +122,7 @@ These files are used in the `snowflake_yellow12.ipynb` notebook for the end-to-e
 - Weather impact on supply chain
 - Customer payment analysis
 - Address standardization and matching
+- Advertising campaign performance and user retention analysis
 
 ### **Advanced Analytics**
 - Time series analysis with window functions
